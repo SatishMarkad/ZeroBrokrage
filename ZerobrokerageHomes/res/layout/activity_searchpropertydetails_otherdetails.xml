@@ -1,0 +1,603 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    		    android:id="@+id/layout_propertyOtherDetails"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:visibility="gone">
+	        
+    
+                   <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="Home Information"
+			           android:layout_margin="10dp"
+			           android:textAppearance="?android:attr/textAppearanceMedium"
+			           android:textStyle="bold"
+			           android:textColor="@android:color/black"
+			           android:layout_alignParentLeft="true"/>
+                   
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="TypeID"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_TypeId"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Beds"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_Beds"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Baths"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_Baths"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Balconies"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_Balconies"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Built-up Area"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_BuiltArea"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Carpet Area"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_CarpetArea"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="Financial Information"
+			           android:layout_margin="10dp"
+			           android:textAppearance="?android:attr/textAppearanceMedium"
+			           android:textStyle="bold"
+			           android:textColor="@android:color/black"
+			           android:layout_alignParentLeft="true"/>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Rent"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherdetails_Rent"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Lease Term"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_LeaseTerm"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Lease Deposit"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_LeaseDeposit"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Maintenance"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_Maintenance"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Utilities"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_Utilities"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		              
+		             <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="Availability Information"
+			           android:layout_margin="10dp"
+			           android:textAppearance="?android:attr/textAppearanceMedium"
+			           android:textStyle="bold"
+			           android:textColor="@android:color/black"
+			           android:layout_alignParentLeft="true"/>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="AvailableFor"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherdetails_AvailableFor"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Available-on Date"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_AvailableDate"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="Community Information"
+			           android:layout_margin="10dp"
+			           android:textAppearance="?android:attr/textAppearanceMedium"
+			           android:textStyle="bold"
+			           android:textColor="@android:color/black"
+			           android:layout_alignParentLeft="true"/>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Age of Building"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_AgeofBuilding"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Total Building"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_TotalBuilding"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="Facility Information"
+			           android:layout_margin="10dp"
+			           android:textAppearance="?android:attr/textAppearanceMedium"
+			           android:textStyle="bold"
+			           android:textColor="@android:color/black"
+			           android:layout_alignParentLeft="true"/>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Floor No"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_FloorNo"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Total Floors"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_TotalFloors"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		   
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="No of Lifts"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_NoofLifts"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="No of Parkings"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <TextView 
+		                   android:id="@+id/otherDetails_NoofParkings"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Paid Information"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentRight="true"/>
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                 		                
+		                 <ImageView
+		                   android:id="@+id/onBackOtherDetailsPage"   
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="20dp"
+				           android:layout_alignParentLeft="true"
+				           android:background="@drawable/back"/>
+		                
+		                 <ImageView 
+		                   android:id="@+id/onNextOtherDetailsPage"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="20dp"
+				           android:layout_alignParentRight="true"
+				           android:src="@drawable/back"/>
+		             </RelativeLayout>
+	         </LinearLayout>
+	       
+	        

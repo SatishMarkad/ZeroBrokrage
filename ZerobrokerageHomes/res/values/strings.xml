@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">ZerobrokerageHomes</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hint_userName">  USER NAME</string>
+    <string name="hint_password">  PASSWORD</string>
+    <string name="hint_usermobile">  Username (Mobile Number)</string>
+    <string name="hint_usergestermobile">  Username (Registered Mobile No.)</string>
+    <string name="hint_verification">  Verification Code</string>
+   <string name="str_copyright">Copyrights</string>
+    <!-- Dialog Message -->
+    <string name="msg_dialog">Loading please wait..</string>
+    <!-- Add Post Activity -->
+    <string name="txt_provide_details_address">Provide Details Address of Your Property</string>
+   <string name="hint_socityname">  Society Name</string>
+   <string name="hint_flatno">  Flat No,Floor No</string>
+   <string name="hint_lanezip">  Lane Zip Code</string>
+   <string name="hint_nearestlandmark">  Nearest landmarks</string>
+   <string name="hint_state">  pune,Maharashtra,India</string>
+   <string name="hint_anythingselse">  Anythings else wish to mention</string>
+   <string name="hint_rs">RS.</string>
+   <string name="hint_flathouseno">FlatHouseNumber*</string>
+   <string name="hint_BuildingSocietyName">BuildingSocietyName*</string>
+   <string name="hint_StreetRoadName">StreetRoadName</string>
+   <string name="hint_AreaLocality">AreaLocality</string>
+   <string name="hint_Landmark">Landmark</string>
+   <string name="hint_TownCityDistrict">TownCityDistrict</string>
+   <string name="hint_Pincode">Pincode</string>
+   
+   <string name="txt_type">Type</string>
+   <string name="txt_property_onmap">Please locate your property on map</string>
+   <string name="txt_basic_info">Basic Information</string>
+   <string name="txt_available">Available For</string>
+   <string name="txt_furniture">Furniture</string>
+   <string name="txt_floor">Floor</string>
+   <string name="txt_availablefor">Available on</string>
+   <string name="txt_finacialeInfo">Financial Information</string>
+   <string name="txt_rental">Rental</string>
+   <string name="txt_deposit">LeaseDeposit</string>
+   <string name="txt_maintances">Maintanance</string>
+   <string name="txt_Utilities">Utilities</string>
+   <string name="txt_AgeOfBuilding">AgeOfBuilding</string>
+   <string name="txt_FloorNo">FloorNo</string>
+   <string name="txt_TotalFloors">TotalFloors</string>
+   <string name="txt_TotalBuildings">TotalBuildings</string>
+   <string name="txt_LeaseTerm">LeaseTerm</string>
+   <string name="txt_propetyinfo">Property Information</string>
+   <string name="txt_beds">Beds</string>
+   <string name="txt_baths">Baths</string>
+   <string name="txt_balconies">Balconies</string>
+   <string name="txt_car_parking">NoOfCarParkings</string>
+   <string name="txt_bike_parking">Bike Parking</string>
+   <string name="txt_area">BuiltupArea</string>
+   <string name="txt_NoOfLifts">NoOfLifts</string>
+   <string name="txt_lease">CarpetArea</string>
+   <string name="hint_sq">Sq</string>
+   <string name="hint_property_des">Description</string>
+   <string name="txt_campus_amenitie">Internal Amenities</string>
+   <string name="txt_propetyaddress">Property Address</string>
+   <string name="txt_other_amenitie">External Amenities</string>
+   
+   
+   <string name="txt_Furnished">Furnished</string>
+   <string name="txt_GasLeakDetector">GasLeakDetector</string>
+   <string name="txt_Intercom">Intercom</string>
+   <string name="txt_Inverter">Inverte</string>
+   <string name="txt_PanicButton">PanicButton </string>
+   <string name="txt_Pets">Pets</string>
+   <string name="txt_PipedGas">PipedGas</string>
+   <string name="txt_VideoDoorphone">VideoDoorphone</string>
+   <string name="txt_WaterStorage">WaterStorage</string>
+   
+   <string name="txt_Lift">Lift</string>
+   <string name="txt_Gym">Gym</string>
+   <string name="txt_GarbageChute">GarbageChute</string>
+   <string name="txt_PowerBackup">PowerBackup</string>
+   <string name="txt_VisitorParking">VisitorParking</string>
+   <string name="txt_ServiceLift">ServiceLift</string>
+   <string name="txt_InternetWifi">InternetWifi</string>
+   <string name="txt_Clubhouse">Clubhouse</string>
+   <string name="txt_SwimmingPool">SwimmingPool</string>
+   <string name="txt_Garden">Garden</string>
+   <string name="txt_Playarea">Playarea</string>
+   <string name="txt_Security">Security</string>
+   <string name="txt_ReservedParking">ReservedParking</string>
+   <string name="txt_MaintenanceStaff">MaintenanceStaff</string>
+   <string name="txt_RWH">RWH</string>
+   <string name="txt_STP">STP</string>
+   <string name="txt_DialogValidation">Please fill all mandatory feilds</string>
+   <!-- Search on NearBy Homes -->
+   
+    
+    <string name="txt_RentedHome">Rented Homes</string>
+   <string name="txt_F">F</string>
+   <string name="txt_M">M</string>
+   <string name="txt_L">L</string>
+   <string name="txt_S">S</string>
+   <string name="txt_Beds1">Beds  1</string>
+   <string name="txt_Redius10">Redius  10</string>
+   <string name="txt_Budget2000">Budget  2000</string>
+   <string name="txt_Deposit10000">Deposit  10000</string>
+   <string name="txt_Boys">Boys</string>
+   <string name="txt_Girls">Girls</string>
+   <string name="txt_UniSex">UniSex</string>
+   <string name="txt_Search">Search</string>
+   <string name="txt_Satelite">Satellite</string>
+   <string name="txt_Hybrit">Hybrit</string>
+   <string name="txt_Tap">Tap</string>
+    
+    
+    
+   <!--Alert Dialog  -->
+   <string name="alert_internetconnection">Please Check Internet Connection.</string>
+   <string name="alert_internetconnectionslow">Try Later Server not responding.</string>
+   <string name="alert_userexists">User already exists!</string>
+   <string name="alert_invalidverificode">Invalid verification code.</string>
+   <string name="alert_verificoderequired">Verification Code is required.</string>
+   <string name="alert_mobileNum">Please Enter 10 digts mobile number.</string>
+   <string name="alert_incorrectnamepass">The user name or password provided is incorrect.</string>
+   <string name="alert_usernum_pass">Mobilenumber and Password required.</string>
+   <string name="alert_fillall_details">Please Fill All Details.</string>
+   <string name="alert_limitupload">Allow only 5 Photo on Server.</string>
+   <string name="alert_email">Please Enter Email.</string>
+   <string name="alert_deactivate">DeActivate The Account.</string>
+   <string name="alert_uploadsucessfull">Photo Upload Successfully.</string>
+   <string name="alert_uploaddetailsucessfull">Upload Detail Successfully.</string>
+   <string name="alert_postdetails">Please Post the Details Frist.</string>
+   <string name="alert_nofavourties">No Favourties Record.</string>
+   <string name="alert_savesearchrecord">Record Save Successfully.</string>
+   <string name="alert_nosavesearchrecord">Record Not Save Successfully.Please Try again.</string>
+   <string name="alert_savesearchrecorddelete">Record Delete Successfully.</string>
+   <string name="alert_nosavesearchrecorddelete">Record Not Delete Successfully.Please Try again.</string>
+   <string name="alert_signUpSuccess">SignUp is Successfully.</string>
+   <string name="alert_signUpUnSuccess">SignUp is Not Successfully.Please Try again.</string>  
+   
+    <string name="alert_nosaveSearch">No Save Record.</string>
+  
+    <!-- API Url -->
+   <string name="url">http://www.zerobrokeragehomes.com/webapi/</string>
+   <string name="url_verifyPhone">http://www.zerobrokeragehomes.com/webapi/MobileNumber/</string>
+   <string name="url_getstate">http://www.zerobrokeragehomes.com/webapi/MasterData/GetStates</string>
+   <string name="url_gettypeid">http://www.zerobrokeragehomes.com/webapi/masterdata/GetPropertyTypes</string>
+   <string name="url_genrateDeviceId">http://www.zerobrokeragehomes.com/webapi/MobileNumber/GetCapabilityToken</string>
+   
+   
+</resources>

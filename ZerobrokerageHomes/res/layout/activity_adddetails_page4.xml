@@ -1,0 +1,407 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    	            android:id="@+id/layout_Detail_Page4"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" 
+	                android:background="@drawable/bg_app"
+	                android:visibility="gone">
+
+	    		 <TextView
+	                 android:id="@+id/txt_otherInfo"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_margin="10dp"
+	                 android:text="@string/txt_other_amenitie"
+	                 android:textColor="@android:color/black" 
+	                 android:textAppearance="?android:attr/textAppearanceMedium" 
+	                 android:textStyle="bold"
+	                 android:layout_marginBottom="5dp"/>
+	     
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_Lift"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" 
+	                    android:layout_below="@+id/txt_otherInfo"/>
+
+	                <ToggleButton
+	                    android:id="@+id/btn_Lift"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/txt_otherInfo"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_ServiceLift"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_ServiceLift"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_ServiceLift"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp"
+	                    android:layout_marginTop="5dp" 
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_Lift"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_InternetWifi"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_InternetWifi"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_InternetWifi"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_ServiceLift"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_Gym"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_Gym"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_Gym"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_InternetWifi"/>
+	                
+	                
+	                
+	                 <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_Clubhouse"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_Clubhouse"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	               <ToggleButton
+	                    android:id="@+id/btn_Clubhouse"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_Gym"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_SwimmingPool"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_SwimmingPool"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_SwimmingPool"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_Clubhouse"/>
+	               
+	                 <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_GarbageChute"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_GarbageChute"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_GarbageChute"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp"
+	                    android:layout_marginTop="5dp" 
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_SwimmingPool"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_Garden"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_Garden"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_Garden"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_GarbageChute"/>
+	               
+	                
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_Playarea"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_PlayareaGarden"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_PlayareaGarden"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_Garden"/>
+	               
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_PowerBackup"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_PowerBackup"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_PowerBackup"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_PlayareaGarden"/>
+	               
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_Security"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_Security"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_Security"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_PowerBackup"/>
+	               
+	                
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_ReservedParking"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_ReservedParking"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_ReservedParking"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_Security"/>
+	               
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_VisitorParking"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_VisitorParking"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_VisitorParking"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_ReservedParking"/>
+	               
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_MaintenanceStaff"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_MaintenanceStaff"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_MaintenanceStaff"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_VisitorParking"/>
+	               
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_RWH"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_RWH"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_RWH"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_MaintenanceStaff"/>
+	               
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_STP"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_STP"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <ToggleButton
+	                    android:id="@+id/btn_STP"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="40dp"
+	                    android:layout_marginBottom="10dp" 
+	                    android:layout_marginTop="5dp"
+	                    android:background="@drawable/off"
+	                    android:layout_below="@+id/btn_RWH"/>
+	               
+	                 
+	               
+	                
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_margin="20dp"
+	                    android:src="@drawable/back"
+	                    android:layout_below="@+id/btn_STP"
+	                    android:onClick="onBackPage4"/>
+	                
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentRight="true"
+	                    android:layout_margin="20dp"
+	                    android:src="@drawable/back"
+	                    android:layout_below="@+id/btn_STP"
+	                    android:onClick="onNextPage4"
+	                    android:visibility="gone"/>
+	           
+	
+</RelativeLayout>

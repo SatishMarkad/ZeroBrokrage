@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_Detail_Page2"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app"
+    android:gravity="fill_vertical"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+	     <TextView
+	                 android:id="@+id/txt_PropertyInfo"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_margin="10dp"
+	                 android:text="@string/txt_propetyinfo"
+	                 android:textColor="@android:color/black" 
+	                 android:textAppearance="?android:attr/textAppearanceMedium" 
+	                 android:textStyle="bold"
+	                 android:layout_marginBottom="5dp"/>
+	     
+	                <TextView
+	                    android:id="@+id/txt_Beds"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_beds"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" 
+	                    android:layout_below="@+id/txt_PropertyInfo"/>
+
+	                <Spinner
+	                    android:id="@+id/property_Infospinner1"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="10dp" 
+	                    android:layout_below="@+id/txt_PropertyInfo"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_baths"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_baths"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/property_Infospinner2"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/property_Infospinner2"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_below="@+id/property_Infospinner1"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_balconies"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/property_Infospinner3"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/property_Infospinner3"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_below="@+id/property_Infospinner2"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_FloorNo"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/spinner_FloorNo"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/spinner_FloorNo"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_below="@+id/property_Infospinner3"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                 <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_TotalFloors"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/spinner_TotalFloors"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/spinner_TotalFloors"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_below="@+id/spinner_FloorNo"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_TotalBuildings"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/spinner_TotalBuildings"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/spinner_TotalBuildings"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_below="@+id/spinner_TotalFloors"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                
+	                <TextView
+	                    android:id="@+id/txt_carpark"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_car_parking"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_carparking"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/btn_carparking"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_below="@+id/spinner_TotalBuildings"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_NoOfLifts"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/sinner_NoOfLifts"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/sinner_NoOfLifts"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp" 
+	                    android:layout_below="@+id/btn_carparking"/>
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_AgeOfBuilding"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/sinner_AgeOfBuilding"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/sinner_AgeOfBuilding"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp" 
+	                    android:layout_below="@+id/sinner_NoOfLifts"/>
+	                
+	                
+	                 <TextView
+	                    android:id="@+id/txt_area"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="8dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_area"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_area"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/edt_area"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+				        android:inputType="number" 
+				        android:background="@drawable/edit_textstyle"
+				        android:singleLine="true"
+	                    android:layout_below="@+id/sinner_AgeOfBuilding"
+	                    android:layout_marginTop="10dp"
+	                    android:hint="@string/hint_sq"
+	                    android:layout_marginBottom="5dp"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_lease"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="8dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_lease"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_lease"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/edt_lease"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_marginTop="15dp"
+				        android:inputType="number" 
+				        android:background="@drawable/edit_textstyle"
+				        android:singleLine="true"
+	                    android:layout_below="@+id/edt_area"
+	                    android:hint="@string/hint_sq"
+	                   />
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="8dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/hint_property_des"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_property_Des"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+	               
+	                <EditText
+	                    android:id="@+id/edt_property_Des"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_marginTop="15dp"
+				        android:inputType="textMultiLine" 
+				        android:background="@drawable/edit_textstyle"
+	                    android:layout_below="@+id/edt_lease"
+	                    android:gravity="left|top"/>
+	                
+	                <ImageView
+	                    android:id="@+id/btn_back"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_margin="20dp"
+	                    android:src="@drawable/back"
+	                    android:layout_below="@+id/edt_property_Des"
+	                    android:onClick="onBackPage2"/>
+	                
+	                <ImageView
+	                    android:id="@+id/btn_next"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentRight="true"
+	                    android:layout_margin="20dp"
+	                    android:src="@drawable/back"
+	                    android:layout_below="@+id/edt_property_Des"
+	                    android:onClick="onNextPage2"/>
+	           
+	
+</RelativeLayout>

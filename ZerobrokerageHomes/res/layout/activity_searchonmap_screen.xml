@@ -1,0 +1,314 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app">
+    
+	    <RelativeLayout
+	        android:id="@+id/layout_PostDetailsheader" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/nearby_homes_bar"
+	        android:layout_alignParentTop="true">
+	       
+				     <ImageView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/back_button_navbar"
+				        android:layout_alignParentLeft="true"
+				        android:layout_margin="8dp"
+				        android:onClick="onBack"/>
+			             
+				    <Button
+				        android:id="@+id/post_btn"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="Save search"
+				        android:layout_alignParentRight="true"
+				        android:layout_margin="2dp"
+				        android:onClick="onSaveList"/>
+	    </RelativeLayout>
+	    
+	   
+		<RelativeLayout 
+		    android:id="@+id/layout_MapFragment"
+		    android:layout_width ="fill_parent"
+		    android:layout_height ="fill_parent"
+		    android:layout_below="@+id/layout_PostDetailsheader">
+		    
+		    <fragment 
+		      	android:id="@+id/layout_map"
+		    	android:layout_width ="fill_parent"
+		    	android:layout_height ="fill_parent"
+			    android:clickable="true"
+		        class="com.google.android.gms.maps.MapFragment"/>
+		</RelativeLayout>   
+	     
+	    
+	    
+	     
+	    <LinearLayout  
+	        android:id="@+id/layout_Location_Details_Contact"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_PostDetailsheader"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="5dp">
+		    
+	       
+	        <ImageView
+		        android:layout_width="47dp"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/rent"
+		        android:layout_gravity="left"
+		        android:onClick="onRent"
+		        android:contentDescription="@string/alert_deactivate"/>
+	     	<ImageView
+		        android:layout_width="55dp"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/pg"
+		        android:onClick="onPG"
+		        android:contentDescription="@string/alert_deactivate"/>
+	     	<ImageView
+		        android:layout_width="47dp"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/buy"
+		        android:onClick="onBuy"
+		        android:contentDescription="@string/alert_deactivate"/>
+	     	
+	   </LinearLayout>
+
+	    <LinearLayout 
+		    android:id="@+id/layout_ListViewAll"
+		    android:layout_width ="fill_parent"
+		    android:layout_height ="fill_parent"
+		    android:layout_below="@+id/layout_Location_Details_Contact"
+		    android:visibility="gone"
+		    android:orientation="vertical">
+	     	
+	        <TextView 
+	            android:layout_width ="wrap_content"
+			    android:layout_height ="wrap_content"
+			    android:text="@string/txt_RentedHome"
+			    android:textColor="@android:color/background_light"
+			    android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:textStyle="bold"/>
+	        
+		     <ListView 
+			      	android:id="@+id/layout_ListView"
+			    	android:layout_width ="fill_parent"
+			    	android:layout_height ="fill_parent"
+			    	android:layout_marginTop="5dp"
+	                android:layout_marginBottom="5dp"
+	                android:headerDividersEnabled="true"
+	                android:footerDividersEnabled="true"
+	                android:cacheColorHint="@android:color/transparent"/>
+		     
+	     </LinearLayout>
+	     
+	    <LinearLayout  
+	        android:id="@+id/layout_FillterList"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_PostDetailsheader"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="5dp"
+		    android:layout_alignParentRight="true">
+
+		     		<Button
+		     		    android:id="@+id/btn_Filter"
+		     		    android:layout_width="40dp"
+		     		    android:layout_height="wrap_content"
+		     		    android:onClick="onFilter"
+		     		    android:text="@string/txt_F" />
+			        
+		     		<Button
+		     		    android:id="@+id/btn_Map"
+		     		    android:layout_width="40dp"
+		     		    android:layout_height="wrap_content"
+		     		    android:onClick="onMapView"
+		     		    android:text="@string/txt_M" 
+		     		    android:visibility="gone"/>
+		     		
+			     	<Button
+			     	    android:id="@+id/btn_List"
+				        android:layout_width="40dp"
+				        android:layout_height="wrap_content"
+				        android:text="@string/txt_L"
+				        android:onClick="onShowOnList"/>
+			     	<Button
+			     	    android:id="@+id/btn_Sort"
+				        android:layout_width="40dp"
+				        android:layout_height="wrap_content"
+				        android:text="@string/txt_S"
+				        android:onClick="onSortData"
+				        android:visibility="gone"/>
+	     	</LinearLayout>
+	   
+              
+	    
+	    
+	     <LinearLayout  
+	        android:id="@+id/layout_FilterProperty"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_FillterList"
+		    android:orientation="vertical"
+		    android:layout_marginTop="1dp"
+		    android:visibility="gone"
+		    android:background="#ffffff">
+		   
+	         
+	                   <TextView
+	                        android:id="@+id/txt_Looking"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/txt_Beds1"
+		                    android:textAppearance="?android:attr/textAppearanceMedium"
+		                    android:textColor="#000000" />
+				      
+	                   <SeekBar android:id="@+id/seekbar_Looking"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:max="5"
+					        android:progress="2"
+					        android:secondaryProgress="2" 
+					        android:layout_margin="5dp"/>
+	                   
+	                   <TextView
+	                        android:id="@+id/txt_Redius"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/txt_Redius10"
+		                    android:textAppearance="?android:attr/textAppearanceMedium" 
+		                    android:textColor="#000000"/>
+				      
+	                   <SeekBar android:id="@+id/seekbar_Redius"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:max="50"
+					        android:progress="40"
+					        android:secondaryProgress="40" 
+					        android:layout_margin="5dp"/>
+	                   
+	                   
+				     	<TextView
+				     	    android:id="@+id/txt_Budget"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/txt_Budget2000"
+		                    android:textAppearance="?android:attr/textAppearanceMedium" 
+		                    android:textColor="#000000"/>
+				      
+	                   <SeekBar android:id="@+id/seekbar_Budget"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:max="20000"
+					        android:progress="20000"
+					        android:secondaryProgress="20000"
+					        android:layout_margin="5dp" />
+	                   
+	                   <TextView
+	                        android:id="@+id/txt_Deposit"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/txt_Deposit10000"
+		                    android:textAppearance="?android:attr/textAppearanceMedium" 
+		                    android:textColor="#000000"/>
+				      
+	                   <SeekBar android:id="@+id/seekbar_Deposit"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:max="200000"
+					        android:progress="50000"
+					        android:secondaryProgress="50000" 
+					        android:layout_margin="5dp"/>
+				     	
+	                   
+	                   
+	                    <LinearLayout 
+	                        android:id="@+id/Layout_PGAccumdation" 
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:orientation="horizontal"
+						    android:layout_margin="5dp">
+
+					     		<Button
+					     		    android:layout_width="wrap_content"
+					     		    android:layout_height="wrap_content"
+					     		    android:onClick="onBoys"
+					     		    android:text="@string/txt_Boys" />
+						        
+						     	<Button
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/txt_Girls"
+							        android:onClick="onGirls"/>
+						     	
+						     	<Button
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/txt_UniSex"
+							        android:onClick="onUniSex"/>
+	     			     </LinearLayout>
+	                   
+	                   
+				     	<Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/txt_Search"
+					        android:onClick="onSearch"
+					        android:layout_gravity="center_horizontal"/>
+				     	
+	         </LinearLayout>
+	    
+	     
+	     
+	     <LinearLayout 
+	        android:id="@+id/layout_Satelite"  
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="5dp"
+		    android:layout_marginBottom="20dp"
+		    android:layout_alignParentBottom="true">
+
+		     		<Button
+		     		    android:layout_width="wrap_content"
+		     		    android:layout_height="wrap_content"
+		     		    android:onClick="onSatelite"
+		     		    android:text="@string/txt_Satelite" />
+			        
+			     	<Button
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/txt_Hybrit"
+				        android:onClick="onHybrit"/>
+	     	</LinearLayout>
+	   
+               <AutoCompleteTextView 
+                   android:id="@+id/auto_textcomplete"
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="80dp"
+                   android:singleLine="true"
+                   android:layout_below="@+id/layout_FillterList"
+                   android:visibility="invisible">
+	             <requestFocus></requestFocus>
+               </AutoCompleteTextView>
+               
+               <Button
+                   android:id="@+id/btn_Tab"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/auto_textcomplete"
+                   android:layout_below="@+id/auto_textcomplete"
+                   android:text="@string/txt_Tap"
+                   android:onClick="onTap"
+                   android:tag="Tap" 
+                   android:layout_alignParentRight="true"/>
+
+               
+	
+</RelativeLayout>

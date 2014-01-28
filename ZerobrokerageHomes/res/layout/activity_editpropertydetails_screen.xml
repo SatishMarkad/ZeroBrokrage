@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app">
+    
+	    <RelativeLayout
+	        android:id="@+id/layout_PostDetailsheader" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/property_details_bar"
+	        android:layout_alignParentTop="true">
+	       
+	     <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/back_button_navbar"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onBack"
+	        android:contentDescription="@string/app_name"/>
+	     
+	    </RelativeLayout>
+	    
+	    <RelativeLayout  
+	        android:id="@+id/layout_Location_Details_Edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_PostDetailsheader">
+	     
+	         <ImageView
+	            android:id="@+id/btn_Delete"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/deactivate_tap_state"
+	        	android:layout_margin="5dp"
+	        	android:onClick="onDelete"
+	        	android:layout_alignParentRight="true"
+	        	android:contentDescription="@string/app_name"/>
+	         
+	         <ImageView
+	            android:id="@+id/btn_Edit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/edit_property_tap_state"
+	        	android:layout_margin="5dp"
+	        	android:onClick="onEdit"
+	        	android:layout_toLeftOf="@+id/btn_Delete"
+	        	android:contentDescription="@string/app_name"/>
+	        </RelativeLayout>
+
+	   
+	    <Button
+		        android:id="@+id/button1"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Button" 
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"/>
+	    
+	  
+	    <Gallery 
+	            android:id="@+id/view_Gallery"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" 
+		        android:layout_marginTop="40dp"
+		        android:layout_below="@+id/layout_Location_Details_Edit"/>
+	    
+	    
+</RelativeLayout>

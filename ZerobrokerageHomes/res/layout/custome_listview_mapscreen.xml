@@ -1,0 +1,41 @@
+ <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+          	        
+    <ImageView
+        android:id="@+id/layout_custome_ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/create_new_navbar"
+        android:layout_margin="5dp"
+        android:padding="5dp"/>
+    	        		
+   <TextView
+    	android:id="@+id/layout_custome_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/layout_custome_ImageView"
+        android:layout_toLeftOf="@+id/layout_custome_TextView_Day"
+        android:layout_margin="10dp"/>
+    	        		
+	  <TextView
+    	android:id="@+id/layout_custome_TextView_Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="2 Dayes ago"
+        android:layout_alignParentRight="true"/>   
+        
+	  <ImageView
+    	android:id="@+id/layout_custome_Favourites"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_custome_TextView_Day"
+        android:layout_margin="10dp"/>          
+	     
+	    </RelativeLayout>
+	                        
+   

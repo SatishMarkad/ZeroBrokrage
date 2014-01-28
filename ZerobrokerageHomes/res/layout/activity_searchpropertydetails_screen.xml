@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app">
+    
+	    <RelativeLayout
+	        android:id="@+id/layout_PostDetailsheader" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/property_details_bar"
+	        android:layout_alignParentTop="true">
+	       
+	     <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/back_button_navbar"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onBack"
+	        android:contentDescription="@string/app_name"/>
+	     
+	       <ImageView
+	        android:id="@+id/img_Favrites"   
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onFavrites"
+	        android:contentDescription="@string/app_name"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/layout_Location_Details_Edit"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_PostDetailsheader"
+		    android:orientation="horizontal"
+		    android:layout_centerHorizontal="true">
+	     
+	        <Button 
+	            android:id="@+id/btn_summery"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Summery"
+	            android:onClick="onSummery"/>
+	        
+	        <Button 
+	            android:id="@+id/btn_details"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Details"
+	            android:onClick="onDetails"/>
+	        
+	        <Button 
+	            android:id="@+id/btn_location"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Location"
+	            android:onClick="onLocation"/>
+	        
+	        <Button 
+	            android:id="@+id/btn_contact"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Contact"
+	            android:onClick="onContact"/>
+	        </LinearLayout>
+
+	   
+	    
+	    <fragment 
+		      	android:id="@+id/layout_map"
+		    	android:layout_width ="fill_parent"
+		    	android:layout_height ="fill_parent"
+			    android:clickable="true"
+			    android:layout_marginTop="10dp"
+		        class="com.google.android.gms.maps.MapFragment"
+		        android:layout_below="@+id/layout_Location_Details_Edit"/>
+	    
+	     <ViewFlipper 
+	            android:id="@+id/view_Fliper"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" 
+		        android:layout_marginTop="10dp"
+		        android:layout_below="@+id/layout_Location_Details_Edit"/>
+	    <Gallery 
+	            android:id="@+id/view_Gallery"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" 
+		        android:layout_marginTop="10dp"
+		        android:layout_below="@+id/layout_Location_Details_Edit"/>
+	    <Button
+		        android:id="@+id/button1"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Button" 
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:background="@android:color/darker_gray"
+		        android:visibility="gone"/>
+	    
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    	            android:id="@+id/layout_propertyaddress"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" 
+	                android:background="@drawable/bg_app">
+
+	     <TextView
+	                 android:id="@+id/txt_Propertyaddress"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_margin="10dp"
+	                 android:text="@string/txt_propetyaddress"
+	                 android:textColor="@android:color/black" 
+	                 android:textAppearance="?android:attr/textAppearanceMedium" 
+	                 android:textStyle="bold"
+	                 android:layout_marginBottom="5dp"/>
+	     
+	                 <EditText
+	                    android:id="@+id/edt_flathousenumber"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_flathouseno"
+	                    android:inputType="number"
+	                    android:singleLine="true"
+	                    android:layout_below="@+id/txt_Propertyaddress"/>
+
+	                 <EditText
+	                    android:id="@+id/edt_buildsocityname"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_BuildingSocietyName"
+	                    android:inputType="text"
+	                    android:singleLine="true"
+	                    android:layout_below="@+id/edt_flathousenumber"/>
+	                 
+	                  <EditText
+	                    android:id="@+id/edt_streetroadname"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_StreetRoadName"
+	                    android:inputType="text"
+	                    android:singleLine="true"
+	                    android:layout_below="@+id/edt_buildsocityname"/>
+	                 
+	                   <EditText
+	                    android:id="@+id/edt_arealocality"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_AreaLocality"
+	                    android:inputType="text"
+	                    android:singleLine="true"
+	                    android:layout_below="@+id/edt_streetroadname"/>
+	                 
+	                    <EditText
+	                    android:id="@+id/edt_landmark"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_Landmark"
+	                    android:inputType="text"
+	                    android:singleLine="true"
+	                    android:layout_below="@+id/edt_arealocality"/>
+	                 
+	                     <EditText
+	                    android:id="@+id/edt_towncitydistric"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_TownCityDistrict"
+	                    android:inputType="text"
+	                    android:singleLine="true"
+	                    android:layout_below="@+id/edt_landmark"/>
+	                     
+	                  <Spinner
+	                    android:id="@+id/spinner_states"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:layout_below="@+id/edt_towncitydistric"/>
+	                  
+	                 
+	                  <EditText
+	                    android:id="@+id/edt_pincode"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="40dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_Pincode"
+	                    android:inputType="number"
+	                    android:singleLine="true"
+	                    android:layout_below="@+id/spinner_states"/>
+	                 
+	              
+	                
+	                <ImageView
+	                    android:id="@+id/btn_next"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentRight="true"
+	                    android:layout_margin="20dp"
+	                    android:src="@drawable/back"
+	                    android:layout_below="@+id/edt_pincode"
+	                    android:onClick="onNextPropertyAddress"/>
+	           
+	
+</RelativeLayout>

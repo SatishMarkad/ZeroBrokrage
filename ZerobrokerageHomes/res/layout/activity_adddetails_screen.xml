@@ -1,0 +1,390 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_app" >
+    
+	    <RelativeLayout
+	        android:id="@+id/layout_PostDetailsheader" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/property_details_bar"
+	        android:layout_alignParentTop="true">
+	       
+	     <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/back_button_navbar"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onBack"/>
+             
+	    <ImageView
+	        android:id="@+id/heder_ForgotPass"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/post_black_button_navbar"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onPost"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout  
+	        android:id="@+id/layout_Location_Details_Contact"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_PostDetailsheader"
+		    android:orientation="horizontal">
+		    
+	       
+	         <ImageView
+	            android:id="@+id/btn_Location"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/location_paid"
+	        	android:layout_margin="5dp"
+	        	android:onClick="onLocationDetails"/>
+	         
+	         <ImageView
+	            android:id="@+id/btn_Details"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/details"
+	        	android:layout_margin="5dp"
+	        	android:onClick="onPostDetails"/>
+	         
+	         <ImageView
+	            android:id="@+id/btn_Picture"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/process_tab_withdata4"
+	        	android:layout_margin="5dp"
+	        	android:onClick="onPicture"/>
+	         </LinearLayout>
+	    
+	    
+
+	    <ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/layout_Location_Details_Contact" 
+	        android:scrollbars="none" >
+
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginTop="5dp" >
+
+	            <include 
+				    layout="@layout/activity_adddetails_property_address"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:visibility="visible"/>
+	            
+	            <RelativeLayout
+	                android:id="@+id/layout_Detail_Page1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical"
+	                android:visibility="gone" >
+
+	                <TextView
+		                 android:id="@+id/txt_BasicInfo"
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:layout_margin="10dp"
+		                 android:text="@string/txt_basic_info"
+		                 android:textColor="@android:color/black"
+		                 android:textAppearance="?android:attr/textAppearanceMedium" 
+		                 android:textStyle="bold"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_type"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_type"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" 
+	                    android:layout_below="@+id/txt_BasicInfo"/>
+
+	                <Spinner
+	                    android:id="@+id/spinner1"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginTop="5dp"
+	                    android:layout_marginBottom="5dp" 
+	                    android:layout_below="@+id/txt_BasicInfo"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_availableon"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_available"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/spinner2"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/spinner2"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp" 
+	                    android:layout_below="@+id/spinner1"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_furniture"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_below="@+id/spinner2"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginTop="15dp"
+	                    android:text="@string/txt_furniture"
+	                    android:textAppearance="?android:attr/textAppearanceSmall"
+	                    android:textColor="@android:color/black" />
+
+	                <Spinner
+	                    android:id="@+id/spinner3"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp" 
+	                    android:layout_below="@+id/spinner2"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_floor"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_floor"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/spinner4"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <Spinner
+	                    android:id="@+id/spinner4"
+	                    android:layout_width="100dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp" 
+	                    android:layout_below="@+id/spinner3"/>
+	                
+	                 <TextView
+	                    android:id="@+id/txt_avaliablefor"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_availablefor"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/btn_calender"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/btn_calender"
+	                    android:layout_width="150dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp" 
+	                    android:layout_below="@+id/spinner4"
+	                    android:singleLine="true"
+	                    android:inputType="none"
+	                    android:background="@drawable/edit_textstyle"/>
+	                
+	                <!-- <TextView
+	                    android:id="@+id/txt_finacialInformation"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_finacialeInfo"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_below="@+id/btn_calender"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" 
+	                    android:textStyle="bold"/> -->
+	                
+	                 <TextView
+	                    android:id="@+id/txt_rental"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_rental"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_rental"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/edt_rental"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_marginTop="15dp" 
+				        android:inputType="number" 
+				        android:background="@drawable/edit_textstyle"
+				        android:singleLine="true"
+	                    android:layout_below="@+id/btn_calender"
+	                    android:hint="@string/hint_rs"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_deposit"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_deposit"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_deposit"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/edt_deposit"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_marginTop="15dp"
+				        android:inputType="number" 
+				        android:background="@drawable/edit_textstyle"
+				        android:singleLine="true"
+	                    android:layout_below="@+id/edt_rental"
+	                    android:hint="@string/hint_rs"/>
+	                
+	                <TextView
+	                    android:id="@+id/txt_maintanances"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_maintances"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_maintanance"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/edt_maintanance"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_marginTop="15dp"
+				        android:inputType="number" 
+				        android:background="@drawable/edit_textstyle"
+				        android:singleLine="true"
+	                    android:layout_below="@+id/edt_deposit"
+	                    android:digits="0"/>
+	                
+	                 <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_Utilities"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_Utilities"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/edt_Utilities"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_marginTop="15dp"
+				        android:inputType="number" 
+				        android:background="@drawable/edit_textstyle"
+				        android:singleLine="true"
+	                    android:layout_below="@+id/edt_maintanance"
+	                    android:digits="0"
+	                    />
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="15dp"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="@string/txt_LeaseTerm"
+	                    android:textColor="@android:color/black"
+	                    android:layout_alignParentLeft="true" 
+	                    android:layout_alignTop="@+id/edt_LeaseTerm"
+	                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	                <EditText
+	                    android:id="@+id/edt_LeaseTerm"
+	                    android:layout_width="150dp"
+	                    android:layout_height="40dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginRight="25dp"
+	                    android:layout_marginBottom="5dp"
+	                    android:layout_marginTop="15dp"
+				        android:inputType="number" 
+				        android:background="@drawable/edit_textstyle"
+				        android:singleLine="true"
+	                    android:layout_below="@+id/edt_Utilities"/>
+	                
+	                
+	                
+	                <ImageView
+	                    android:id="@+id/btn_back"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_margin="20dp"
+	                    android:src="@drawable/back"
+	                    android:layout_below="@+id/edt_LeaseTerm"
+	                    android:onClick="onBackPage1"/>
+	                
+	                <ImageView
+	                    android:id="@+id/btn_next"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_alignParentRight="true"
+	                    android:layout_margin="20dp"
+	                    android:src="@drawable/back"
+	                    android:layout_below="@+id/edt_LeaseTerm"
+	                    android:onClick="onNextPage1"/>
+	            </RelativeLayout>
+	            <include 
+				    layout="@layout/activity_adddetails_page2"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+	            <include 
+				    layout="@layout/activity_adddetails_page3"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+	            <include 
+				    layout="@layout/activity_adddetails_page4"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+	        </RelativeLayout>
+	    </ScrollView>
+	
+</RelativeLayout>

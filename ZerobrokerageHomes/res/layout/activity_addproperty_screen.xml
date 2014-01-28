@@ -1,0 +1,73 @@
+ <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app">
+
+	    <RelativeLayout
+	        android:id="@+id/layout_addpropertyheader" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/my_property_ads_bar"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true">
+	       
+	     <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/back_button_navbar"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onBack"/>
+             
+	    <ImageView
+	        android:id="@+id/heder_ForgotPass"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/create_new_navbar"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="8dp"
+	        android:layout_marginRight="3dp"
+	        android:onClick="onCreateNew"/>
+	    </RelativeLayout>
+	                        
+          	    <LinearLayout
+          	        android:id="@+id/layout_Buttons"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" 
+	                android:layout_below="@+id/layout_addpropertyheader"
+	                android:layout_margin="10dp">
+
+          	        
+          	        		<ImageView
+						        android:layout_width="40dp"
+						        android:layout_height="40dp"
+						        android:src="@drawable/rent"
+						        android:layout_gravity="left"
+						        android:onClick="onRent"/>
+          	        		<ImageView
+						        android:layout_width="46dp"
+						        android:layout_height="40dp"
+						        android:src="@drawable/pg"
+						        android:onClick="onPG"/>
+          	        		<ImageView
+						        android:layout_width="40dp"
+						        android:layout_height="40dp"
+						        android:src="@drawable/buy"
+						        android:onClick="onBuy"/>
+	               </LinearLayout>
+	               
+          	    
+          	    <ListView
+          	        android:id="@+id/layout_ListView"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_below="@+id/layout_Buttons"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginBottom="5dp"
+	                android:headerDividersEnabled="true"
+	                android:footerDividersEnabled="true"
+	                android:cacheColorHint="@android:color/transparent"/>
+          	    
+			 </RelativeLayout>

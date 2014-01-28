@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Nexus One"
+        activity="com.android.zerobrokrage.AddPropertyDetailsActivity"
+        config="layout-sw320dp-w320dp-h533dp-normal-long-port-notnight-hdpi-finger-keyssoft-nokeys-navexposed-trackball-800x480-v14"
+        device="3.7in WVGA (Nexus One)"
+        devicestate="Portrait"
+        target="Android 4.0"
+        theme="@android:style/Theme.Black.NoTitleBar" >
+    </preview>
+    <preview
+        name="sandwitch"
+        activity="com.android.zerobrokrage.AddPropertyDetailsActivity"
+        config="layout-sw320dp-w320dp-h533dp-normal-long-port-notnight-hdpi-finger-keyssoft-nokeys-navexposed-trackball-800x480-v14"
+        device="3.7in WVGA (Nexus One)"
+        devicestate="Portrait"
+        target="Android 4.0"
+        theme="@android:style/Theme.Black.NoTitleBar" >
+    </preview>
+
+</previews>

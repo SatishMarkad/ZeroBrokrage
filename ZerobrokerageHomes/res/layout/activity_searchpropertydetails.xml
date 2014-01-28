@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app">
+    
+	 
+	       <TextView 
+	           android:id="@+id/txt_propertyAddress"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:text="Property Address"
+	           android:layout_marginLeft="5dp"
+	           android:textAppearance="?android:attr/textAppearanceMedium"
+	           android:textStyle="bold"
+	           android:textColor="@android:color/black"/>
+	    
+	       <ScrollView 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_below="@+id/txt_propertyAddress"
+		      android:layout_marginTop="5dp">
+	        
+	         <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+	        
+	             <include 
+				    layout="@layout/activity_searchpropertydetails_addressdetails"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+	             
+	             <include 
+				    layout="@layout/activity_searchpropertydetails_otherdetails"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+	             
+	             <include 
+				    layout="@layout/activity_searchpropertydetails_internalamenites"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+	             
+	             <include 
+				    layout="@layout/activity_searchpropertydetails_externalamenities"     
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"/>
+
+	         </LinearLayout>
+	           
+	         </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,432 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    		    android:id="@+id/layout_propertyExternalAmenities"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:visibility="gone">
+	        
+    
+                   <TextView 
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="External Amenities"
+			           android:layout_margin="10dp"
+			           android:textAppearance="?android:attr/textAppearanceMedium"
+			           android:textStyle="bold"
+			           android:textColor="@android:color/black"
+			           android:layout_alignParentLeft="true"/>
+                   
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Clubhouse"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/ExternalAmenities_Clubhouse"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Gym"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_Gym"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="MaintenanceStaff"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_MaintenanceStaff"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="ReservedParking"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_ReservedParking"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="ServiceLift"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_ServiceLift"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="VisitorParking"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                <ImageView 
+		                   android:id="@+id/externalAmenities_VisitorParking"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="GarbageChute"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_GarbageChute"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		             </RelativeLayout>
+		             
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="InternetWifi"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_InternetWifi"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Playarea"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                
+		                 <ImageView 
+		                   android:id="@+id/externlAmenities_Playarea"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		         //////////////////////////
+		         
+		         <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="RWH"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_RWH"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="STP"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                
+		                 <ImageView 
+		                   android:id="@+id/externlAmenities_STP"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Garden"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_Garden"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Lift"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                
+		                 <ImageView 
+		                   android:id="@+id/externlAmenities_Lift"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="PowerBackup"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_PowerBackup"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Security"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                
+		                 <ImageView 
+		                   android:id="@+id/externlAmenities_Security"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             <RelativeLayout
+		                android:layout_width="fill_parent"
+					    android:layout_height="wrap_content">
+		                
+		                 <TextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="SwimmingPool"
+				           android:layout_margin="10dp"
+				           android:textAppearance="?android:attr/textAppearanceSmall"
+				           android:textStyle="bold"
+				           android:textColor="@android:color/black"
+				           android:layout_alignParentLeft="true"/>
+		                 
+		                 <ImageView 
+		                   android:id="@+id/externalAmenities_SwimmingPool"  
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="10dp"
+				           android:layout_alignParentRight="true"
+				           />
+		                 
+		                 
+		             </RelativeLayout>
+		             
+		             
+		        
+		                 <ImageView
+		                   android:id="@+id/onBackExternalAmenitiesPage" 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:layout_margin="20dp"
+				           android:layout_alignParentLeft="true"
+				           android:background="@drawable/back"/>
+		                
+		                
+		        
+        </LinearLayout>
+	       
+	        

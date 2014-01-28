@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app">
+    
+	   
+	    <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="Contact Details"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:layout_marginTop="5dp"
+              android:textColor="@android:color/black"/>
+	    
+        <LinearLayout 
+             android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_centerInParent="true"
+	         android:orientation="vertical">
+            
+           <LinearLayout 
+             android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal"
+	         android:layout_margin="5dp">
+            
+               <ImageView 
+                   android:id="@+id/onCall"
+                  android:layout_width="wrap_content"
+	              android:layout_height="wrap_content" 
+	              android:src="@drawable/call"/>
+               
+               <TextView 
+                  android:id="@+id/contcat_call" 
+                  android:layout_width="wrap_content"
+	              android:layout_height="wrap_content" 
+	              android:layout_marginLeft="3dp"
+	              android:textColor="@android:color/black"/>
+           
+             </LinearLayout>  
+             
+            <LinearLayout 
+             android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal"
+	         android:layout_margin="5dp">
+            
+               <ImageView 
+                   android:id="@+id/onEmail"
+                  android:layout_width="26dp"
+	              android:layout_height="26dp" 
+	              android:src="@drawable/refer_app"/>
+               
+               <TextView 
+                  android:id="@+id/contcat_email" 
+                  android:layout_width="wrap_content"
+	              android:layout_height="wrap_content" 
+	              android:layout_marginLeft="3dp"
+	              android:textColor="@android:color/black"/>
+           
+             </LinearLayout>  
+             
+             <LinearLayout 
+             android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal"
+	         android:layout_margin="5dp">
+            
+               <ImageView 
+                   android:id="@+id/onSMS"
+                  android:layout_width="wrap_content"
+	              android:layout_height="wrap_content" 
+	              android:src="@drawable/sms"/>
+               
+               <TextView
+                  android:id="@+id/contcat_sms"  
+                  android:layout_width="wrap_content"
+	              android:layout_height="wrap_content" 
+	              android:layout_marginLeft="3dp"
+	              android:textColor="@android:color/black"/>
+           
+             </LinearLayout>  
+        </LinearLayout>      
+              
+</RelativeLayout>

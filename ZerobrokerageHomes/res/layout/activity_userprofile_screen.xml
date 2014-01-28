@@ -1,0 +1,171 @@
+ <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app">
+
+	    <RelativeLayout
+	        android:id="@+id/layout_userprofileheader" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/user_profile_bar"
+	        android:layout_alignParentTop="true">
+	       
+	     <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/back_button_navbar"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onBack"/>
+             
+	    <ImageView
+	        android:id="@+id/btn_Edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/edit_navbar"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onEdit"/>
+	    </RelativeLayout>
+	    
+          <TextView
+        		android:id="@+id/txt_profileDetails" 
+        		android:layout_width="wrap_content"
+       			android:layout_height="wrap_content"
+       			android:textColor="#3e3e3e"
+       			android:textAppearance="?android:attr/textAppearanceMedium"
+       			android:layout_alignParentLeft="true"
+       			android:layout_margin="10dp"
+       			android:layout_below="@+id/layout_userprofileheader"/>
+          
+            <ScrollView 
+                android:id="@+id/layout_EditProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_above="@+id/img_infi"
+                android:layout_below="@+id/layout_userprofileheader"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+	            android:visibility="gone">
+          
+          	    <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+
+          	        
+	                <EditText
+	                    android:id="@+id/edt_UpdateuserName"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="45dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="Frist Name"
+	                    android:inputType="textPersonName"
+	                    android:singleLine="true" />
+
+	                <EditText
+	                    android:id="@+id/edt_UpdateLastName"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="45dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="Last Name"
+	                    android:inputType="textPersonName"
+	                    android:singleLine="true" />
+          	        
+          	        
+	               
+	                <EditText
+	                    android:id="@+id/edt_UpdatePass"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="45dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="@string/hint_password"
+	                    android:inputType="textPassword"
+	                    android:singleLine="true" />
+
+	                <EditText
+	                    android:id="@+id/edt_UpdateUpEmail"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="45dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:hint="EMAIL"
+	                    android:inputType="textEmailAddress"
+	                    android:singleLine="true" />
+
+	                <TextView
+	                    android:id="@+id/edt_UpdateMobile"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="45dp"
+	                    android:layout_marginBottom="20dp"
+	                    android:layout_marginLeft="30dp"
+	                    android:layout_marginRight="30dp"
+	                    android:layout_marginTop="10dp"
+	                    android:background="@drawable/edit_textstyle"
+	                    android:singleLine="true" 
+	                    android:padding="5dp"/>
+
+	                <ImageView
+	                    android:id="@+id/btn_Update"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center_horizontal"
+	                    android:layout_margin="10dp"
+	                    android:onClick="onUpdate"
+	                    android:src="@drawable/sign_up_long_green_button" />
+	                
+	                
+	            </LinearLayout>
+	        
+          	    </ScrollView>	  
+       <ImageView
+	            android:id="@+id/btn_logout"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/logout"
+	        	android:layout_margin="10dp"
+	        	android:onClick="onLogOut"
+	        	android:layout_above="@+id/img_infi"
+	        	android:visibility="gone"/>
+       
+	    
+				<TextView
+		            android:id="@+id/autoCompleteTextView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/str_copyright" 
+		            android:layout_centerHorizontal="true"
+		            android:layout_alignParentBottom="true"
+		            android:layout_margin="5dp"
+		            android:textColor="@android:color/black"/>
+	            
+	            <ImageView
+		            android:id="@+id/img_infi"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/info"
+			        android:layout_gravity="right" 
+			        android:layout_margin="5dp"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentBottom="true"
+			        android:onClick="onInfo"/>
+			
+			
+			 </RelativeLayout>

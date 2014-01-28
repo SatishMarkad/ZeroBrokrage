@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".GPSonMap">
+    
+	    <RelativeLayout
+	        android:id="@+id/layout_PostDetailsheader" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/property_details_bar"
+	        android:layout_alignParentTop="true">
+	       
+	     <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/back_button_navbar"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onBack"/>
+             
+	    <ImageView
+	        android:id="@+id/post_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/post_black_button_navbar"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="8dp"
+	        android:onClick="onPost"/>
+	    </RelativeLayout>
+	    
+	   
+	    <LinearLayout  
+	        android:id="@+id/layout_Image_Details"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_PostDetailsheader"
+		    android:orientation="horizontal">
+	       
+	         <EditText
+	            android:id="@+id/edit_Title"
+		        android:layout_width="175dp"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/edit_textstyle"
+	        	android:layout_margin="5dp"
+	        	android:singleLine="true"
+	        	android:hint="Title"/>
+	         
+	         <CheckBox
+	            android:id="@+id/check_box"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/details"
+	        	android:layout_margin="5dp"
+	        	android:text="isDefault"/>
+	         
+	         
+	         </LinearLayout>
+	         
+	    
+	     <LinearLayout  
+	        android:id="@+id/layout_CameraGallery"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/layout_Image_Details"
+		    android:orientation="horizontal">
+		    
+	       
+	         <Button
+	            android:id="@+id/camera_btn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/location_paid"
+	        	android:layout_margin="5dp"
+	        	android:onClick="onCamera"
+	        	android:text="Camera"/>
+	         
+	         <Button
+	            android:id="@+id/gallary_btn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/details"
+	        	android:layout_margin="5dp"
+	        	android:onClick="onGallary"
+	        	android:text="Gallary"/>
+	         </LinearLayout>
+	         
+	     
+	     <ImageView
+	        android:id="@+id/full_img"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+	        android:layout_below="@+id/layout_CameraGallery"/>
+
+	   </RelativeLayout>
